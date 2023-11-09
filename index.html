@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>GitHub Finder</title>
+  </head>
+  <body class="">
+    <div class="header bg-blue-500 py-2 w-full text-white">
+      <h1 class="max-w-[1000px] text-2xl font-semibold mx-auto px-4">
+        GitHub Finder
+      </h1>
+    </div>
+    <div class="container max-w-[1000px] mx-auto px-4 my-10">
+      <div class="">
+        <p class="error py-2 px-4 bg-red-400 text-white rounded-md hidden"></p>
+      </div>
+      <div class="mt-2 mb-10">
+        <div class="card border border-zinc-200 rounded-md p-6">
+          <div class="card-header">
+            <h1 class="text-4xl font-bold">Search GitHub Users</h1>
+            <form id="search-form">
+              <div>
+                <label for="username" class="block my-2"
+                  >Enter a username to fetch a user profile and
+                  repository</label
+                >
+                <input
+                  type="text"
+                  placeholder="GitHub Username"
+                  name="username"
+                  class="py-2 rounded-md px-4 border border-zinc-200 w-full focus:outline-none"
+                />
+              </div>
+              <div class="my-3">
+                <button
+                  type="submit"
+                  class="py-2 px-4 rounded-md bg-violet-500 font-semibold hover:bg-violet-600 text-white"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="profile mt-8 hidden">
+          <div
+            class="card border border-zinc-200 rounded-md p-5 flex gap-3 flex-wrap mx-auto justify-center px-4"
+          >
+            <div class="space-y-2">
+              <figure>
+                <img
+                  src="https://previews.123rf.com/images/artshock/artshock1209/artshock120900045/15221647-imag-of-heart-in-the-blue-sky-against-a-background-of-white-clouds.jpg"
+                  alt=""
+                  class="sm:max-w-[360px] rounded-md"
+                />
+              </figure>
+              <button
+                class="w-full bg-blue-500 text-white rounded-md py-2 px-4"
+              >
+                View Profile
+              </button>
+            </div>
+            <div>
+              <div class="flex gap-4 items-center flex-wrap justify-center">
+                <button
+                  class="bg-blue-400 text-white text-sm rounded-md py-2 px-3"
+                >
+                  Public Repo : 44
+                </button>
+                <button
+                  class="bg-zinc-400 text-white text-sm rounded-md py-2 px-3"
+                >
+                  Public Gits : 18
+                </button>
+                <button
+                  class="bg-green-400 text-white text-sm rounded-md py-2 px-3"
+                >
+                  Followers : 412
+                </button>
+                <button
+                  class="bg-sky-400 text-white text-sm rounded-md py-2 px-3"
+                >
+                  Following : 40
+                </button>
+              </div>
+              <div class="mt-4">
+                <ul class="">
+                  <li class="border py-2 px-4 border-b-0">
+                    Company : Traversy Media
+                  </li>
+                  <li class="border py-2 px-4 border-b-0">
+                    Website/Blog : https://traversymedia.com
+                  </li>
+                  <li class="border py-2 px-4 border-b-0">Location : Boston</li>
+                  <li class="border py-2 px-4">Member Since : 2011-01-28</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="py-3 bg-zinc-100 w-full mx-auto text-center">
+      <p>GitHub Finder &copy; 2023</p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
