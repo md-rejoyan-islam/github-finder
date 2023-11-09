@@ -15,6 +15,7 @@ async function handleSubmit(event) {
 
   const data = await fetchGithubUser(username);
 
+  // not found error
   if (data.message === "Not Found") {
     error.textContent = `User not found!`;
     error.classList.remove("hidden");
