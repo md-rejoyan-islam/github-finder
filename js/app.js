@@ -7,6 +7,7 @@ let userData = {};
 // event handler
 form.addEventListener("submit", handleSubmit);
 
+// handle submit
 async function handleSubmit(event) {
   event.preventDefault();
   const newForm = new FormData(event.target);
@@ -41,7 +42,6 @@ const fetchGithubUser = async (username) => {
 };
 
 // user data show
-
 function showUserData(userData) {
   user.classList.remove("hidden");
   user.innerHTML = `<div
