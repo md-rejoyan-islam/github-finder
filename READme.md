@@ -11,4 +11,4 @@
 
 #### Live Preview
 
-<a href="https://rejoyanislam.github.io/github-finder/">Preview </a>
+<a href="https://md-rejoyan-islam.github.io/github-finder">Preview </a>
